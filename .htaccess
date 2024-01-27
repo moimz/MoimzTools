@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(installer|admin)/([a-zA-Z]+)\.png$ $1/emblem.php?package=$2 [L]
+
