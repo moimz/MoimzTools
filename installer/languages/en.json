@@ -1,0 +1,120 @@
+{
+    "back": "뒤로",
+    "continue": "계속",
+    "agree": "위의 라이선스에 동의합니다.",
+    "latest": {
+        "init": "최신버전을 확인중입니다.",
+        "success": "현재 ${latest}은 최신버전입니다.",
+        "fail": "최신버전 ${latest}이 업데이트 되었습니다. 가급적 최신버전을 설치하여 주십시오."
+    },
+    "dependencies": {
+        "php": {
+            "init": "PHP 최소요구사항을 확인중입니다.",
+            "success": "PHP 최소요구사항(${version})을 만족합니다. (현재버전 : ${installedVersion})",
+            "fail": "PHP ${version} 이상이 필요합니다. (현재버전 : ${installedVersion})"
+        },
+        "mysql_client": {
+            "init": "PHP의 MySQLi 모듈을 확인중입니다.",
+            "success": "PHP의 MySQLi 최소요구사항(${version})을 만족합니다. (현재버전 : ${installedVersion})",
+            "fail": "PHP의 MySQLi ${version} 이상이 필요합니다. (현재버전 : ${installedVersion})"
+        },
+        "mysql_server": {
+            "fail": "MySQL ${version} 이상이 필요합니다. (현재버전 : ${installedVersion})"
+        },
+        "curl": {
+            "init": "PHP의 CURL 모듈을 확인중입니다.",
+            "success": "PHP의 CURL 모듈이 설치되어 있습니다.",
+            "fail": "PHP의 CURL 모듈이 필요합니다. PHP설치 매뉴얼을 참고하여 설치하여 주십시오."
+        },
+        "encrypt": {
+            "init": "PHP의 openssl 또는 mcrypt 모듈을 확인중입니다.",
+            "success": "PHP의 openssl 또는 mcrypt encrypt 모듈이 설치되어 있습니다.",
+            "fail": "PHP의 openssl 또는 mcrypt encrypt 모듈이 필요합니다. PHP설치 매뉴얼을 참고하여 설치하여 주십시오."
+        },
+        "zip": {
+            "init": "PHP의 ZipArchive 모듈을 확인중입니다.",
+            "success": "PHP의 ZipArchive 모듈이 설치되어 있습니다.",
+            "fail": "PHP의 ZipArchive 모듈이 필요합니다. PHP설치 매뉴얼을 참고하여 설치하여 주십시오."
+        },
+        "mbstring": {
+            "init": "PHP의 mbstring 모듈을 확인중입니다.",
+            "success": "PHP의 mbstring 모듈이 설치되어 있습니다.",
+            "fail": "PHP의 mbstring 모듈이 필요합니다. PHP설치 매뉴얼을 참고하여 설치하여 주십시오."
+        },
+        "gd": {
+            "init": "PHP의 GD 모듈을 확인중입니다.",
+            "success": "PHP의 GD 모듈이 설치되어 있습니다.",
+            "fail": "PHP의 GD 모듈이 필요합니다. PHP설치 매뉴얼을 참고하여 설치하여 주십시오."
+        },
+        "rewrite": {
+            "init": "웹서버의 rewrite 설정이 적용되었는지 확인중입니다.",
+            "success": "웹서버의 rewrite 설정이 적용되어, 짧은주소 사용이 가능합니다.",
+            "fail": "웹서버의 rewrite 설정이 적용되지 않아, 짧은주소 기능을 사용할 수 없습니다."
+        }
+    },
+    "requirements": {
+        "modules": {
+            "init": "${name} 모듈의 존재유무를 확인중입니다.",
+            "success": "${name} 모듈이 설치되어 있습니다. (현재버전 : ${installedVersion})",
+            "fail": "${name} 모듈은 필수 모듈입니다. 배포사이트에서 다운로드 받아 modules 폴더에 업로드하여 주십시오."
+        },
+        "plugins": {
+            "init": "${name} 플러그인의 존재유무를 확인중입니다.",
+            "success": "${name} 플러그인이 설치되어 있습니다. (현재버전 : ${installedVersion})",
+            "fail": "${name} 플러그인이 필수 플러그인입니다. 배포사이트에서 다운로드 받아 plugins 폴더에 업로드하여 주십시오."
+        },
+        "widgets": {
+            "init": "${name} 위젯의 존재유무를 확인중입니다.",
+            "success": "${name} 위젯이 설치되어 있습니다. (현재버전 : ${installedVersion})",
+            "fail": "${name} 위젯은 필수 위젯입니다. 배포사이트에서 다운로드 받아 widgets 폴더에 업로드하여 주십시오."
+        }
+    },
+    "directory": {
+        "init": "${directory}폴더의 퍼미션을 확인중입니다.",
+        "success": "${directory}폴더의 퍼미션이 정상적으로 설정되었습니다.",
+        "fail": "${directory}폴더의 퍼미션을 {permission}이상으로 설정하여 주십시오."
+    },
+    "config": {
+        "init": "이전 설정파일 존재유무를 확인중입니다.",
+        "success": "이전 설정파일 ${config} 이 존재하지 않습니다.",
+        "fail": "이전 설정파일 ${config} 이 존재합니다. 해당 파일을 지우시거나, 이전 설정을 유지합니다."
+    },
+    "dependencyRefresh": "요구사항 재확인",
+    "key": "암호화키",
+    "key_help": "데이터 암호화/복호화에 사용할 문자열을 입력하여 주십시오.",
+    "key_exists_help": "이전 설치시 입력한 암호화키와 동일하게 입력하여 주십시오.",
+    "key_preset_help": "환경설정파일에 설정한 암호화키와 동일하게 입력하여 주십시오.",
+    "db_host": "DB호스트",
+    "db_port": "DB포트",
+    "db_id": "DB아이디",
+    "db_password": "DB패스워드",
+    "db_name": "DB명",
+    "db_help": "데이터베이스 접속정보를 입력하여 주십시오.",
+    "db_exists_help": "이전 설치시 설정된 환경설정을 유지합니다.",
+    "db_preset_help": "환경설정파일에 설정된 환경설정을 유지합니다.",
+    "admin_id": "관리자아이디",
+    "admin_email": "관리자이메일",
+    "admin_name": "관리자성명",
+    "admin_nickname": "관리자닉네임",
+    "admin_password": "관리자패스워드",
+    "wait": "프로그램을 설치중입니다. 페이지를 이동하거나, 창을 닫지 마세요.",
+    "errors": {
+        "key": "암호화에 사용할 문자열을 입력되지 않았습니다.",
+        "key_exists": "이전 설치시 입력된 암호화키와 일치하지 않습니다.",
+        "key_preset": "환경설정파일에 입력된 암호화키와 일치하지 않습니다.",
+        "db": "데이터베이스에 접속할 수 없습니다. 접속정보를 다시 확인하여 주십시오.",
+        "admin_id": "관리자 아이디를 입력하여 주십시오.",
+        "admin_id_exists": "이미 다른 사용자가 사용중인 아이디입니다. 다른 아이디를 입력하여 주십시오.",
+        "admin_email": "관리자 이메일주소를 입력하여 주십시오.",
+        "admin_email_exists": "이미 다른 사용자가 사용중인 이메일주소입니다. 다른 이메일주소를 입력하여 주십시오.",
+        "admin_name": "관리자 이름을 입력하여 주십시오.",
+        "admin_nickname": "관리자 닉네임을 입력하여 주십시오.",
+        "admin_nickname_exists": "이미 다른 사용자가 사용중인 닉네임입니다. 다른 닉네임을 입력하여 주십시오.",
+        "admin_password": "관리자 패스워드를 입력하여 주십시오.",
+        "file": "환경설정파일을 저장할 수 없습니다. configs 폴더의 퍼미션을 확인하여 주십시오.",
+        "table": "데이터베이스 테이블을 생성할 수 없습니다."
+    },
+    "complete": "프로그램 설치가 완료되었습니다.",
+    "go_admin": "계속 버튼을 클릭하면, 프로그램 관리자페이지로 이동됩니다.",
+    "go_main": "계속 버튼을 클릭하면, 프로그램 메인페이지로 이동합니다."
+}
